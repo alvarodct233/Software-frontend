@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default async function Panel() {
     return (
         <div>
@@ -16,11 +18,17 @@ export default async function Panel() {
 
                     <div className="flex flex-col h-60 md:flex-row w-full px-4">
 
-                        <button className="flex-1 m-4 md:h-80 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Subida de Activos</button>
+                    <Link href="/subida-de-activos"className="flex-1 m-4 md:h-80 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                        <button>Subida de Activos</button>
+                    </Link>
 
-                        <button className="flex-1 m-4 md:h-80 bg-green-500 text-white rounded-lg hover:bg-green-700">Subida de Personal</button>
+                    <Link href="/subida-de-personal" className="flex-1 m-4 md:h-80 bg-green-500 text-white rounded-lg hover:bg-green-700">
+                        <button>Subida de Personal</button>
+                    </Link>
 
-                        <button className="flex-1 m-4 md:h-80 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700">Procesos</button>
+                    <Link href="/procesos" className="flex-1 m-4 md:h-80 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700">
+                        <button>Procesos</button>
+                    </Link>
 
                     </div>
 
